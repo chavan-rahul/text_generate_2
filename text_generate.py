@@ -12,7 +12,7 @@ def main():
     model_choice = st.radio("Select a Model:", ('Text Generation Model', 'Harry Potter Model'))
 
     # Load the selected tokenizer
-    if model_choice == 'Text Generation Model':
+    if model_choice == 'Poem Generation Model':
         tokenizer_path = 'tokenizer.pkl'
     else:  # Assuming 'Harry Potter Model' is the other choice
         tokenizer_path = 'tokenizer.pk2'
