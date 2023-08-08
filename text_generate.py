@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Streamlit app
 def main():
-    st.title('Text Generation with Streamlit')
+    st.title('Text Generation')
 
     # Model selection
     model_choice = st.radio("Select a Model:", ('Poem Generation Model', 'Harry Potter Model'))
