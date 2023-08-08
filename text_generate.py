@@ -9,7 +9,7 @@ def main():
     st.title('Text Generation with Streamlit')
 
     # Model selection
-    model_choice = st.radio("Select a Model:", ('Text Generation Model', 'Harry Potter Model'))
+    model_choice = st.radio("Select a Model:", ('Poem Generation Model', 'Harry Potter Model'))
 
     # Load the selected tokenizer
     if model_choice == 'Poem Generation Model':
