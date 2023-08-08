@@ -27,10 +27,10 @@ def main():
         model_path = 'harrypotter_model.h5'
     
     model = load_model(model_path)
-    MAX_SEQUENCE_LENGTH = 20
+    MAX_SEQUENCE_LENGTH = 40
 
     # Text generation function
-    def generate_text(seed_text, max_words=50):
+    def generate_text(seed_text, max_words=200):
         generated_text = seed_text
         for _ in range(max_words):
             input_sequence = tokenizer.texts_to_sequences([seed_text])
