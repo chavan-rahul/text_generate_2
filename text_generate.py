@@ -22,7 +22,7 @@ def main():
 
     # Load the selected text generation model
     if model_choice == 'Text Generation Model':
-        model_path = 'text_generation_model.h5'
+        model_path = 'poem_generation_model.h5'
     else:  # Assuming 'Harry Potter Model' is the other choice
         model_path = 'harrypotter_model.h5'
     
