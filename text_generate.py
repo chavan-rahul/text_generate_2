@@ -6,18 +6,24 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 
-[theme]
-base = "light"
+#[theme]
+#base = "light"
 # Check if the user has a preference for light or dark mode
-user_theme = st.session_state.theme
-if user_theme is None:
-  user_theme = "light"
+#user_theme = st.session_state.theme
+#if user_theme is None:
+#  user_theme = "light"
 
 # Set the theme based on the user's preference
-st.set_theme(base=user_theme)
+#st.set_theme(base=user_theme)
 
 # Create a button to toggle the theme
-st.button("Toggle Theme")
+#st.button("Toggle Theme")
+st.set_page_config(
+    page_title="Text Generation App",
+    page_icon="📝",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    theme="light"
 
 # Streamlit app
 def main():
