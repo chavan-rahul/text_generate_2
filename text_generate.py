@@ -4,6 +4,19 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
+
+
+# Check if the user has a preference for light or dark mode
+user_theme = st.session_state.theme
+if user_theme is None:
+  user_theme = "light"
+
+# Set the theme based on the user's preference
+st.set_theme(base=user_theme)
+
+# Create a button to toggle the theme
+st.button("Toggle Theme")
+
 # Streamlit app
 def main():
     st.title('Text Generation')
