@@ -16,14 +16,16 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Set the theme based on the user's preference
 #st.set_theme(base=user_theme)
 
-# Create a button to toggle the theme
-#st.button("Toggle Theme")
+# Create a button to toggle the them
+
 st.set_page_config(
     page_title="Text Generation App",
     page_icon="📝",
     layout="wide",
     initial_sidebar_state="expanded",
     theme="light"
+)
+
 
 # Streamlit app
 def main():
