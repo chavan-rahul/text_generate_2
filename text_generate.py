@@ -6,6 +6,8 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 
+[theme]
+base = "light"
 # Check if the user has a preference for light or dark mode
 user_theme = st.session_state.theme
 if user_theme is None:
