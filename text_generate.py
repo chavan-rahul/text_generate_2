@@ -18,13 +18,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Create a button to toggle the them
 
-st.set_page_config(
-    page_title="Text Generation App",
-    page_icon="📝",
-    layout="wide",
-    initial_sidebar_state="expanded",
-    theme="light"
-)
+
 
 
 # Streamlit app
